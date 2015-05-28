@@ -1,7 +1,7 @@
 Virto Commerce Timber Documentation
 =====================
 
-####[View documentation](http://virtocommerce.github.io/timber)
+####[View documentation](http://virtocommerce.github.io/Timber)
 
 Bugs and Feedback
 --
