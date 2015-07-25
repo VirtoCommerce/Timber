@@ -17,7 +17,7 @@ version: v2.1.1
     <p class="docs-text">
       Latest build: <span class="build-date">{{ page.version }}</span> •
       <a href="https://github.com/VirtoCommerce/Timber" title="Get the source" class="text-link-on-orange">View Source on Github</a> •
-      <a href="https://demo2.virtocommerce.com/" title="See Timber in action" class="text-link-on-orange" data-track="Demo" title="View Demo Store">View Demo Store</a>
+      <a href="https://demo.virtocommerce.com/" title="See Timber in action" class="text-link-on-orange" data-track="Demo" title="View Demo Store">View Demo Store</a>
     </p>
   </header>
 
@@ -97,19 +97,19 @@ version: v2.1.1
           DOWNLOAD TIMBER
         ===================================== -->
         <h2 class="doc-title gettingstarted-title" id="get-started"><strong>1.3 </strong>Download Timber</h2>
-        <p class="docs-text">Download <a href="https://github.com/VirtoCommerce/Timber/archive/{{ page.version }}.zip" class="docs-link" data-track="Download" data-version="{{ page.version }}">Timber.zip <strong class="docs-strong">{{ page.version }}</strong></a> or clone the latest master branch from the <a href="https://github.com/Shopify/Timber" class="docs-link">GitHub</a> repo:</p>
+        <p class="docs-text">Download <a href="https://github.com/VirtoCommerce/Timber/archive/{{ page.version }}.zip" class="docs-link" data-track="Download" data-version="{{ page.version }}">Timber.zip <strong class="docs-strong">{{ page.version }}</strong></a> or clone the latest master branch from the <a href="https://github.com/VirtoCommerce/Timber" class="docs-link">GitHub</a> repo:</p>
 <pre>
-git clone https://github.com/Shopify/Timber.git
+git clone https://github.com/VirtoCommerce/Timber.git
 </pre>
 
         <div class="grid">
           <div class="grid__item one-half small--one-whole">
             <h4 class="docs-h4">Dev Notes</h4>
-            <p class="docs-text">Shopify Timber tested and working in IE 8+, Safari, Chrome, Firefox, Opera, Safari IOS, Browser and Chrome Android.</p>
+            <p class="docs-text">Timber tested and working in IE 8+, Safari, Chrome, Firefox, Opera, Safari IOS, Browser and Chrome Android.</p>
           </div>
           <div class="grid__item one-half small--one-whole">
             <h4 class="docs-h4">Demo Store</h4>
-            <p class="docs-text">The demo has fake products inserted so you can see what a populated site would look like. To see what your brand new site will look like when you install the theme, check out our <a href="http://timber-demo-empty.myshopify.com?utm_source=Timber&utm_medium=os" class="docs-link" data-track="Demo Empty">empty store demo</a>.</p>
+            <p class="docs-text">The demo has fake products inserted so you can see what a populated site would look like. To see what your brand new site will look like when you install the theme, check out our <a href="http://demo.virtocommerce.com?utm_source=Timber&utm_medium=os" class="docs-link" data-track="Demo Empty">empty store demo</a>.</p>
           </div>
         </div>
 
@@ -119,17 +119,7 @@ git clone https://github.com/Shopify/Timber.git
           THEME EDITING
         ===================================== -->
         <h2 class="doc-title gettingstarted-title" id="theme-editing"><strong>1.4 </strong>Theme Editing</h2>
-        <p class="docs-text">Once you've downloaded your theme it's time to get it onto your store. Either upload the zip to <code>your-url.com/admin/themes</code> or use one of the programs below. Either way, you can use your text editor of choice.</p>
-        <div class="grid">
-          <div class="grid__item one-half small--one-whole">
-            <h4 class="docs-h4">Theme Gem</h4>
-            <p class="docs-text">If you're comfortable with the command line, use the <a href="https://github.com/Shopify/shopify_theme" class="docs-link">Shopify Theme Gem</a> on OSX or Windows to upload changes to your theme with ease.</p>
-          </div>
-          <div class="grid__item one-half small--one-whole">
-            <h4 class="docs-h4">Desktop Theme Editor</h4>
-            <p class="docs-text">If you prefer a beautiful interface, use the <a href="https://apps.shopify.com/desktop-theme-editor" class="docs-link">Desktop Theme Editor</a> and start managing all of your theme assets.</p>
-          </div>
-        </div>
+        <p class="docs-text">Once you've downloaded your theme it's time to get it onto your store. Upload the zip to <code>your-url.com/admin</code> or use VS.NET to open and change theme. Either way, you can use your text editor of choice.</p>
 
         <hr class="hr--docshr">
 
@@ -137,7 +127,7 @@ git clone https://github.com/Shopify/Timber.git
           SELL YOUR THEME
         ===================================== -->
         <h2 class="doc-title gettingstarted-title" id="demos"><strong>1.5 </strong>Sell Your Theme</h2>
-        <p class="docs-text">You can sell your theme in <a href="https://themes.shopify.com?utm_source=Timber&utm_medium=os" class="docs-link">Shopify's Theme Store</a> by following our <a href="https://themes.shopify.com/services/themes/guidelines?utm_source=Timber&utm_medium=os" class="docs-link">Guideline Checklist</a>. You can also earn 20% of each customer’s bill that you refer to Shopify by enrolling in the <a href="http://www.shopify.com/partners?utm_source=Timber&utm_medium=os" class="docs-link">Shopify Partner Program</a>.</p>
+        <p class="docs-text">You can sell your theme in <a href="https://virtocommerce.com/apps/themes?utm_source=Timber&utm_medium=os" class="docs-link">Virto Commerce Apps Store</a>.</p>
 
         <hr class="hr--docshr">
 
@@ -147,9 +137,6 @@ git clone https://github.com/Shopify/Timber.git
         <h2 class="doc-title grid-title" id="sass"><strong>2.1 </strong>Sass</h2>
 
         <p class="docs-text">Timber is built with <a href="http://sass-lang.com/">Sass</a>, but <strong class="docs-strong">you don't have to know it to use it</strong>. The compiling is all done on the Shopify server, so edit the <strong class="docs-strong">.scss.liquid</strong> file just as you would CSS and watch the magic happen on your site.</p>
-
-        <h4 class="docs-h4">Imports and Mixins</h4>
-        <p class="docs-text">You cannot use <code>@imports</code> in a Sass liquid file. That means no dependence on Compass, Bourbon or similar Sass frameworks. A section labeled <strong>Sass Mixins</strong> has been included in <strong class="docs-strong">timber.scss.liquid</strong> with a few <a href="#sass-mixins" title="Sass mixins" class="docs-link">helpers</a> to start you off.</p>
 
         <hr class="hr--docshr">
 
